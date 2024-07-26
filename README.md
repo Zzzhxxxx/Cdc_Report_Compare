@@ -6,3 +6,23 @@
 
 # 2 脚本介绍
 - 脚本分为四部分：准备工作、sam_waive模式、netlist_rtl模式和计算运行时间。
+- 准备工作：
+	- 定义函数；
+	- 输入参数；
+	- 定义数组和哈希。
+- `sam_waive`模式：
+	- 遍历`$FILE1`4次，第1次使用`awk`捕获描述`error`的总行数，第2次处理`setup_tag`，第3次处理`conv_tag`，第4次使用`awk`处理`ordinary_tag`；
+	- 遍历`$FILE2`4次，第1次使用`awk`捕获描述`error`的总行数，第2次处理`setup_tag`，第3次处理`conv_tag`，第4次使用`awk`处理`ordinary_tag`；
+	- 针对`setup_tag`进行比较；
+	- 针对`conv_tag`进行比较；
+	- 针对`ordinary_tag`进行比较。
+- `netlist_rtl`模式：
+	- 遍历`$FILE1`4次，第1次使用`awk`捕获描述`error`的总行数，第2次处理`setup_tag`，第3次处理`conv_tag`，第4次使用`awk`处理`ordinary_tag`；
+	- 遍历`$FILE2`4次，第1次使用`awk`捕获描述`error`的总行数，第2次处理`setup_tag`，第3次处理`conv_tag`，第4次使用`awk`处理`ordinary_tag`；
+	- 针对`setup_tag`进行比较；
+	- 针对`conv_tag`进行比较；
+	- 针对`ordinary_tag`进行比较。
+	- 注：`sam_waive`模式和`netlist_rtl`模式的不同之处在于：
+		- 对特殊端口如`abc_reg_30__301_/Q(N)`的处理方式；
+		- 对`waive`的处理方式。
+- 计时功能。
