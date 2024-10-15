@@ -11,14 +11,14 @@
 	- 输入参数；
 	- 定义数组和哈希。
 - Part2 `sam_waive` 模式：
-	- 遍历`$FILE1` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag` ，第 3 次处理 `conv_tag` ，第 4 次使用 `awk` 处理 `ordinary_tag` ；
-	- 遍历`$FILE2` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag` ，第 3 次处理 `conv_tag` ，第 4 次使用 `awk` 处理 `ordinary_tag` ；
+	- 遍历 `$FILE1` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag`，第 3 次处理 `conv_tag`，第 4 次使用 `awk` 处理 `ordinary_tag`；
+	- 遍历 `$FILE2` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag`，第 3 次处理 `conv_tag`，第 4 次使用 `awk` 处理 `ordinary_tag`；
 	- 针对 `setup_tag` 进行比较；
 	- 针对 `conv_tag` 进行比较；
 	- 针对 `ordinary_tag` 进行比较。
 - Part3 `netlist_rtl` 模式：
-	- 遍历 `$FILE1` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag` ，第 3 次处理 `conv_tag` ，第 4 次使用 `awk` 处理 `ordinary_tag` ；
-	- 遍历`$FILE2`4次，第1次使用`awk`捕获描述`error`的总行数，第2次处理`setup_tag`，第3次处理`conv_tag`，第4次使用`awk`处理`ordinary_tag`；
+	- 遍历 `$FILE1` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag`，第 3 次处理 `conv_tag`，第 4 次使用 `awk` 处理 `ordinary_tag`；
+	- 遍历 `$FILE2` 4 次，第 1 次使用 `awk` 捕获描述 `error` 的总行数，第 2 次处理 `setup_tag`，第 3 次处理 `conv_tag`，第 4 次使用 `awk` 处理 `ordinary_tag`；
 	- 针对 `setup_tag` 进行比较；
 	- 针对 `conv_tag` 进行比较；
 	- 针对 `ordinary_tag` 进行比较。
